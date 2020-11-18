@@ -12,14 +12,15 @@ public class FileReaderServiceImplTest {
     private static final String SEPARATOR = ",";
     private FileReaderServiceImpl fileReaderService = new FileReaderServiceImpl();
 
-    @Test(expected = RuntimeException.class)
+    @Test()
     public void test_empty() {
-        fileReaderService.read(EMPTY_FILE_PATH, SEPARATOR);
+        List<List<String>> list = new ArrayList<>();
+        Assert.assertEquals(list, fileReaderService.read(EMPTY_FILE_PATH));
     }
 
     @Test(expected = RuntimeException.class)
     public void test_not_real() {
-        fileReaderService.read(NOT_REAL_FILE_PATH, SEPARATOR);
+        fileReaderService.read(NOT_REAL_FILE_PATH);
     }
 
     @Test
@@ -31,6 +32,6 @@ public class FileReaderServiceImplTest {
         row.add("A3JRGQVEQN31IQ");
         row.add("Pamela G. Williams");
         expectedList.add(row);
-        Assert.assertEquals(expectedList, fileReaderService.read(FILE_PATH, SEPARATOR));
+        Assert.assertEquals(expectedList, fileReaderService.read(FILE_PATH));
     }
 }
