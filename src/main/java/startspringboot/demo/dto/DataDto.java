@@ -1,5 +1,7 @@
 package startspringboot.demo.dto;
 
+import java.time.LocalDateTime;
+
 public class DataDto {
     private Long id;
     private String productId;
@@ -8,7 +10,7 @@ public class DataDto {
     private Long helpfulnessNumerator;
     private Long helpfulnessDenominator;
     private Long score;
-    private String time;
+    private LocalDateTime time;
     private String summary;
     private String text;
 
@@ -68,11 +70,11 @@ public class DataDto {
         this.score = score;
     }
 
-    public String getTime() {
+    public LocalDateTime getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(LocalDateTime time) {
         this.time = time;
     }
 
