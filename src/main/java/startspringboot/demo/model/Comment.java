@@ -107,18 +107,18 @@ public class Comment {
 
     @Override
     public String toString() {
-        return "Comment{" +
-                "id=" + id +
-                ", comment=" + commentId +
-                ", user=" + user +
-                ", product=" + product +
-                ", helpfulnessNumerator=" + helpfulnessNumerator +
-                ", helpfulnessDenominator=" + helpfulnessDenominator +
-                ", score=" + score +
-                ", time=" + time +
-                ", summary='" + summary + '\'' +
-                ", text='" + text + '\'' +
-                '}';
+        return "Comment{"
+                + "id=" + id
+                + ", comment=" + commentId
+                + ", user=" + user
+                + ", product=" + product
+                + ", helpfulnessNumerator=" + helpfulnessNumerator
+                + ", helpfulnessDenominator=" + helpfulnessDenominator
+                + ", score=" + score
+                + ", time=" + time
+                + ", summary='" + summary + '\''
+                + ", text='" + text + '\''
+                + '}';
     }
 
     @Override
@@ -126,16 +126,16 @@ public class Comment {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Comment comment = (Comment) o;
-        return Objects.equals(id, comment.id) &&
-                Objects.equals(commentId, comment.commentId) &&
-                Objects.equals(user, comment.user) &&
-                Objects.equals(product, comment.product) &&
-                Objects.equals(helpfulnessNumerator, comment.helpfulnessNumerator) &&
-                Objects.equals(helpfulnessDenominator, comment.helpfulnessDenominator) &&
-                Objects.equals(score, comment.score) &&
-                Objects.equals(time, comment.time) &&
-                Objects.equals(summary, comment.summary) &&
-                Objects.equals(text, comment.text);
+        return Objects.equals(id, comment.id)
+                && Objects.equals(commentId, comment.commentId)
+                && Objects.equals(user, comment.user)
+                && Objects.equals(product, comment.product)
+                && Objects.equals(helpfulnessNumerator, comment.helpfulnessNumerator)
+                && Objects.equals(helpfulnessDenominator, comment.helpfulnessDenominator)
+                && Objects.equals(score, comment.score)
+                && Objects.equals(time, comment.time)
+                && Objects.equals(summary, comment.summary)
+                && Objects.equals(text, comment.text);
     }
 
     @Override

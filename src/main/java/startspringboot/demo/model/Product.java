@@ -31,10 +31,10 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", productId=" + productId +
-                '}';
+        return "Product{"
+                + "id=" + id
+                + ", productId=" + productId
+                + '}';
     }
 
     @Override
@@ -42,8 +42,8 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return Objects.equals(id, product.id) &&
-                Objects.equals(productId, product.productId);
+        return Objects.equals(id, product.id)
+                && Objects.equals(productId, product.productId);
     }
 
     @Override

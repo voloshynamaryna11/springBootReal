@@ -36,10 +36,10 @@ public class Role {
 
     @Override
     public String toString() {
-        return "Role{" +
-                "id=" + id +
-                ", roleName=" + roleName +
-                '}';
+        return "Role{"
+                + "id=" + id
+                + ", roleName=" + roleName
+                + '}';
     }
 
     @Override
@@ -47,8 +47,8 @@ public class Role {
         if (this == o) return true;
         if (!(o instanceof Role)) return false;
         Role role = (Role) o;
-        return Objects.equals(id, role.id) &&
-                roleName == role.roleName;
+        return Objects.equals(id, role.id)
+                && roleName == role.roleName;
     }
 
     @Override

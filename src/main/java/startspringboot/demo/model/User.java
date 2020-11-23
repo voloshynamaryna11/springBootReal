@@ -64,13 +64,13 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", profileName='" + profileName + '\'' +
-                ", password='" + password + '\'' +
-                ", roles=" + roles +
-                '}';
+        return "User{"
+                + "id=" + id
+                + ", userId=" + userId
+                + ", profileName='" + profileName + '\''
+                + ", password='" + password + '\''
+                + ", roles=" + roles
+                + '}';
     }
 
     @Override
@@ -78,11 +78,11 @@ public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return Objects.equals(id, user.id) &&
-                Objects.equals(userId, user.userId) &&
-                Objects.equals(profileName, user.profileName) &&
-                Objects.equals(password, user.password) &&
-                Objects.equals(roles, user.roles);
+        return Objects.equals(id, user.id)
+                && Objects.equals(userId, user.userId)
+                && Objects.equals(profileName, user.profileName)
+                && Objects.equals(password, user.password)
+                && Objects.equals(roles, user.roles);
     }
 
     @Override
